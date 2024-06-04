@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="/">Car Rental</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/listings">Listings</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1>Find the Perfect Rental Car</h1>
+            <form action="/search" method="get">
+                <input type="text" name="location" placeholder="Enter location">
+                <input type="date" name="start_date">
+                <input type="date" name="end_date">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </section>
+    <section class="features">
+        <div class="container">
+            <h2>Why Choose Us?</h2>
+            <div class="feature-cards">
+                <div class="card">
+                    <h3>Wide Selection</h3>
+                    <p>Choose from a wide variety of cars to fit your needs.</p>
+                </div>
+                <div class="card">
+                    <h3>Best Prices</h3>
+                    <p>Get the best deals on car rentals.</p>
+                </div>
+                <div class="card">
+                    <h3>Convenient Locations</h3>
+                    <p>Find cars available at convenient locations near you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Car Rental. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
