@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.navbar {
+    padding: 20px 0;
+    background-color: #f4f4f4;
+}
+
+.navbar a {
+    color: #333;
+    text-decoration: none;
+}
+
+.hero {
+    background-color: #333;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.features {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+.card {
+    float: left;
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+}
+
+.card:not(:last-child) {
+    margin-right: 5%;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
